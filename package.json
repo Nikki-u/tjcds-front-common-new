@@ -1,0 +1,140 @@
+{
+  "name": "tjcds-front-common-new",
+  "version": "1.0.0",
+  "description": "协同天津数据前端组件库",
+  "keywords": [
+    "协同数据",
+    "协同天津",
+    "前端组件库"
+  ],
+  "author": "nieqinfen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nikki-u/tjcds-front-common-new"
+  },
+  "main": "lib/TjcdsComponents.umd.min.js",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lib": "vue-cli-service build --target lib --name TjcdsComponents --dest lib packages/index.js",
+    "prepublishOnly": "npm run lib"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "ant-design-vue": "^1.6.1",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "canvg": "^2.0.0",
+    "core-js": "^2.6.10",
+    "file-saver": "^2.0.2",
+    "highlight.js": "^9.16.2",
+    "html2canvas": "^1.0.0-rc.5",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "save-svg-as-png": "^1.4.14",
+    "v-viewer": "^1.4.2",
+    "viewerjs": "^1.5.0",
+    "vue": "^2.6.6",
+    "vue-amap": "^0.5.10",
+    "vue-draggable-resizable": "^2.1.0",
+    "vuescroll": "^4.14.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.8.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "less": "^2.7.3",
+    "less-loader": "^4.1.0",
+    "mockjs": "^1.1.0",
+    "node-sass": "^4.13.0",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^7.3.1",
+    "vue-cli-plugin-ant-design": "^1.0.0",
+    "vue-svg-loader": "^0.12.0",
+    "vue-template-compiler": "^2.5.21",
+    "vuepress": "^1.5.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/strongly-recommended",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "template-curly-spacing": "off",
+      "indent": "off",
+      "generator-star-spacing": "off",
+      "no-mixed-operators": 0,
+      "vue/max-attributes-per-line": [
+        2,
+        {
+          "singleline": 5,
+          "multiline": {
+            "max": 1,
+            "allowFirstLine": false
+          }
+        }
+      ],
+      "vue/attribute-hyphenation": 0,
+      "vue/html-self-closing": 0,
+      "vue/component-name-in-template-casing": 0,
+      "vue/html-closing-bracket-spacing": 0,
+      "vue/singleline-html-element-content-newline": 0,
+      "vue/no-unused-components": 0,
+      "vue/multiline-html-element-content-newline": 0,
+      "vue/no-use-v-if-with-v-for": 0,
+      "vue/html-closing-bracket-newline": 0,
+      "vue/no-parsing-error": 0,
+      "no-console": 0,
+      "no-tabs": 0,
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": true
+        }
+      ],
+      "semi": [
+        2,
+        "never",
+        {
+          "beforeStatementContinuationChars": "never"
+        }
+      ],
+      "no-delete-var": 2,
+      "prefer-const": [
+        2,
+        {
+          "ignoreReadBeforeAssign": false
+        }
+      ]
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
